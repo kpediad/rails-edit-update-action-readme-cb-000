@@ -630,3 +630,7 @@ Completed 302 Found in 4ms (ActiveRecord: 0.6ms)
 Started GET "/articles/1" for 127.0.0.1 at 2019-04-30 05:17:46 +0000
 Processing by ArticlesController#show as HTML
   Parameters: {"id"=>"1"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered articles/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2042ms (Views: 2.1ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
