@@ -567,3 +567,16 @@ Completed 200 OK in 56707ms (Views: 284.6ms | ActiveRecord: 0.2ms)
 Started GET "/articles/1" for 127.0.0.1 at 2019-04-30 05:17:09 +0000
 Processing by ArticlesController#show as HTML
   Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered articles/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 27362ms (Views: 5.5ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.7ms)[0m  [1mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "My Article"], ["description", "My article desc"], ["created_at", "2019-04-30 05:17:36.470614"], ["updated_at", "2019-04-30 05:17:36.470614"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/articles/1" for 127.0.0.1 at 2019-04-30 05:17:36 +0000
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
