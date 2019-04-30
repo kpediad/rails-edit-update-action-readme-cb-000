@@ -698,3 +698,4 @@ Completed 302 Found in 3ms (ActiveRecord: 1.0ms)
 Started GET "/articles/1" for 127.0.0.1 at 2019-04-30 05:19:15 +0000
 Processing by ArticlesController#show as HTML
   Parameters: {"id"=>"1"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 1]]
