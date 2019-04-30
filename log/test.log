@@ -554,3 +554,5 @@ Completed 500 Internal Server Error in 4145ms (ActiveRecord: 0.0ms)
 Started GET "/articles/1" for 127.0.0.1 at 2019-04-30 05:16:12 +0000
 Processing by ArticlesController#show as HTML
   Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered articles/show.html.erb within layouts/application (65.8ms)
