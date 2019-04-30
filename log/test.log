@@ -539,3 +539,5 @@ Completed 200 OK in 63973ms (Views: 947.2ms | ActiveRecord: 0.6ms)
 Started GET "/articles/1" for 127.0.0.1 at 2019-04-30 05:15:56 +0000
 Processing by ArticlesController#show as HTML
   Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 4145ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
