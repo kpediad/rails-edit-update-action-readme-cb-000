@@ -4,7 +4,7 @@ class ArticlesController < ApplicationController
   end
 
   def show
-    bindings.pry
+    binding.pry
     @article = Article.find(params[:id])
   end
 
