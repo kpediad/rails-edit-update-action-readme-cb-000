@@ -729,3 +729,5 @@ Started GET "/articles/1" for 127.0.0.1 at 2019-04-30 05:21:14 +0000
 Processing by ArticlesController#show as HTML
   Parameters: {"id"=>"1"}
   [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 88100ms (ActiveRecord: 0.2ms)
+  [1m[35m (0.8ms)[0m  rollback transaction
